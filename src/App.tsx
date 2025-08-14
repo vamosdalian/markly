@@ -12,6 +12,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { SimpleEditor } from "./components/tiptap-templates/simple/simple-editor"
+import "./App.css"
 
 export default function App() {
   return (
@@ -39,10 +41,7 @@ export default function App() {
             <NavActions />
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 px-4 py-10">
-          <div className="bg-muted/50 mx-auto h-24 w-full max-w-3xl rounded-xl" />
-          <div className="bg-muted/50 mx-auto h-full w-full max-w-3xl rounded-xl" />
-        </div>
+        <SimpleEditor />
       </SidebarInset>
     </SidebarProvider>
   )
